@@ -57,7 +57,7 @@ a {
   border-bottom: 1px solid #222222;
 
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 
@@ -115,7 +115,7 @@ a {
 
 
 /* =========================
-   CONTACT BUTTON
+   CONTACT BUTTON HEADER
 ========================= */
 
 .login-button {
@@ -143,6 +143,53 @@ a {
   background: #f40612;
 
   transform: translateY(-1px);
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 8px;
+
+  background: transparent;
+  border: none;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.menu-button span {
+  width: 24px;
+  height: 2px;
+
+  display: block;
+
+  background: #ffffff;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu {
+  display: none;
 }
 
 
@@ -206,13 +253,24 @@ a {
 
 
 /* =========================
-   HERO CATEGORY
+   FREE TRIAL LABEL
 ========================= */
 
 .hero-category {
+  display: inline-block;
+
+  margin-bottom: 5px;
+  padding: 7px 12px;
+
+  background: rgba(229, 9, 20, 0.15);
+
+  border: 1px solid rgba(229, 9, 20, 0.4);
+
+  border-radius: 4px;
+
   color: #e50914;
 
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 
   letter-spacing: 2px;
@@ -260,7 +318,7 @@ a {
 
 
 /* =========================
-   HERO BUTTONS
+   HERO BUTTON BASE
 ========================= */
 
 .watch-button,
@@ -313,6 +371,21 @@ a {
   background: rgba(255, 255, 255, 0.25);
 
   transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO NOTE
+========================= */
+
+.hero-note {
+  display: block;
+
+  margin-top: 15px;
+
+  color: #777777;
+
+  font-size: 12px;
 }
 
 
@@ -736,10 +809,18 @@ a {
     gap: 18px;
   }
 
+  .nav a {
+    font-size: 14px;
+  }
+
   .movie-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .movie-poster {
+    height: 260px;
+  }
+
 }
 
 
@@ -749,244 +830,17 @@ a {
 
 @media (max-width: 700px) {
 
-  /* HEADER */
+  /* =====================
+     HEADER
+  ===================== */
 
   .header {
-    height: auto;
-
-    min-height: 70px;
-
-    padding: 15px 20px;
-
-    flex-wrap: wrap;
-  }
-
-  .nav {
-    order: 3;
-
-    width: 100%;
-
-    justify-content: flex-start;
-
-    overflow-x: auto;
-
-    gap: 20px;
-
-    padding-bottom: 5px;
-  }
-
-  .nav a {
-    white-space: nowrap;
-  }
-
-
-  /* HERO */
-
-  .hero {
-    min-height: 520px;
-
-    padding: 60px 25px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero-buttons {
-    flex-wrap: wrap;
-  }
-
-
-  /* CATALOG */
-
-  .movie-section {
-    padding: 35px 20px 50px;
-  }
-
-  .section-header {
-    align-items: flex-start;
-
-    flex-direction: column;
-
-    gap: 8px;
-  }
-
-  .movie-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 14px;
-  }
-
-  .movie-poster {
-    height: 230px;
-  }
-
-
-  /* HOW IT WORKS */
-
-  .how-it-works {
-    padding: 70px 20px;
-  }
-
-  .devices {
-    grid-template-columns: 1fr;
-  }
-
-  .section-title h2 {
-    font-size: 30px;
-  }
-
-
-  /* CONTACT */
-
-  .contact {
-    padding: 80px 20px;
-  }
-
-  .contact-content h2 {
-    font-size: 32px;
-  }
-
-
-  /* FOOTER */
-
-  .footer {
-    padding: 25px 20px;
-  }
-
-}
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 450px) {
-
-  .logo {
-    font-size: 24px;
-  }
-
-  .login-button {
-    padding: 8px 13px;
-
-    font-size: 13px;
-  }
-
-
-  /* HERO */
-
-  .hero {
-    padding: 50px 20px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-
-    align-items: flex-start;
-  }
-
-
-  /* CATALOG */
-
-  .movie-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px;
-  }
-
-  .movie-poster {
-    height: 200px;
-  }
-
-  .movie-info {
-    padding: 12px;
-  }
-
-  .movie-info h3 {
-    font-size: 15px;
-  }
-
-  .movie-info p {
-    font-size: 12px;
-  }
-
-}
-
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-.menu-button {
-  display: none;
-
-  width: 42px;
-  height: 42px;
-
-  padding: 8px;
-
-  background: transparent;
-  border: none;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 5px;
-}
-
-.menu-button span {
-  width: 24px;
-  height: 2px;
-
-  display: block;
-
-  background: #ffffff;
-
-  border-radius: 2px;
-
-  transition:
-    transform 0.25s ease,
-    opacity 0.25s ease;
-}
-
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-.mobile-menu {
-  display: none;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-  .header {
-    position: relative;
-
     height: 70px;
 
     padding: 0 20px;
 
     flex-wrap: nowrap;
   }
-
-
-  /* Esconde menu desktop */
 
   .header .nav {
     display: none;
@@ -996,9 +850,6 @@ a {
     display: none;
   }
 
-
-  /* Botão */
-
   .menu-button {
     display: flex;
 
@@ -1006,7 +857,9 @@ a {
   }
 
 
-  /* Menu aberto */
+  /* =====================
+     MOBILE MENU
+  ===================== */
 
   .mobile-menu {
     position: absolute;
@@ -1037,7 +890,7 @@ a {
       transform 0.2s ease,
       visibility 0.2s ease;
 
-    z-index: 20;
+    z-index: 200;
   }
 
   .mobile-menu.active {
@@ -1047,9 +900,6 @@ a {
 
     transform: translateY(0);
   }
-
-
-  /* Links */
 
   .mobile-menu a {
     width: 100%;
@@ -1066,9 +916,6 @@ a {
   .mobile-menu a:hover {
     color: #ffffff;
   }
-
-
-  /* WhatsApp / contato */
 
   .mobile-menu .mobile-contact {
     margin-top: 12px;
@@ -1090,13 +937,11 @@ a {
   .mobile-menu .mobile-contact:hover {
     background: #f40612;
   }
-}
 
-/* =========================
-   HERO MOBILE
-========================= */
 
-@media (max-width: 700px) {
+  /* =====================
+     HERO
+  ===================== */
 
   .hero {
     min-height: 520px;
@@ -1148,4 +993,205 @@ a {
 
     min-height: 48px;
   }
+
+
+  /* =====================
+     CATALOG
+  ===================== */
+
+  .movie-section {
+    padding: 35px 20px 50px;
+  }
+
+  .section-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .section-header h2 {
+    font-size: 23px;
+  }
+
+  .section-description {
+    font-size: 13px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+  }
+
+  .movie-poster {
+    height: 230px;
+  }
+
+  .movie-info {
+    padding: 13px;
+  }
+
+  .movie-info h3 {
+    font-size: 15px;
+  }
+
+  .movie-info p {
+    font-size: 12px;
+  }
+
+
+  /* =====================
+     HOW IT WORKS
+  ===================== */
+
+  .how-it-works {
+    padding: 70px 20px;
+  }
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .section-title p {
+    font-size: 15px;
+  }
+
+  .devices {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .device-card {
+    padding: 30px 22px;
+  }
+
+
+  /* =====================
+     CONTACT
+  ===================== */
+
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-content h2 {
+    font-size: 32px;
+  }
+
+  .contact-content p {
+    font-size: 16px;
+  }
+
+  .contact-button {
+    width: 100%;
+
+    min-height: 48px;
+  }
+
+
+  /* =====================
+     FOOTER
+  ===================== */
+
+  .footer {
+    padding: 25px 20px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* =====================
+     HERO
+  ===================== */
+
+  .hero {
+    min-height: 500px;
+
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+
+  /* =====================
+     CATALOG
+  ===================== */
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .movie-poster {
+    height: 200px;
+  }
+
+  .movie-info {
+    padding: 12px;
+  }
+
+  .movie-info h3 {
+    font-size: 14px;
+  }
+
+  .movie-info p {
+    font-size: 11px;
+  }
+
+  .movie-category {
+    font-size: 10px;
+  }
+
+
+  /* =====================
+     HOW IT WORKS
+  ===================== */
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+  .device-icon {
+    font-size: 42px;
+  }
+
+
+  /* =====================
+     CONTACT
+  ===================== */
+
+  .contact-content h2 {
+    font-size: 28px;
+  }
+
 }
