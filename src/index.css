@@ -1,0 +1,1151 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #0b0b0b;
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  width: 100%;
+  height: 72px;
+
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: #111111;
+  border-bottom: 1px solid #222222;
+
+  position: relative;
+  z-index: 10;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  color: #ffffff;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #e50914;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+}
+
+.nav a {
+  color: #dddddd;
+
+  font-size: 15px;
+
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADER ACTIONS
+========================= */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+
+  background: #e50914;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-button:hover {
+  background: #f40612;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 50px;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 75% 40%,
+      rgba(229, 9, 20, 0.22),
+      transparent 35%),
+    linear-gradient(90deg,
+      #0b0b0b 0%,
+      #111111 55%,
+      #181818 100%);
+}
+
+
+/* =========================
+   HERO OVERLAY
+========================= */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(90deg,
+      #0b0b0b 0%,
+      rgba(11, 11, 11, 0.85) 35%,
+      rgba(11, 11, 11, 0.25) 100%),
+    linear-gradient(0deg,
+      #0b0b0b 0%,
+      transparent 40%);
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  max-width: 600px;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   HERO CATEGORY
+========================= */
+
+.hero-category {
+  color: #e50914;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero h1 {
+  margin: 15px 0 20px;
+
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+
+/* =========================
+   HERO DESCRIPTION
+========================= */
+
+.hero p {
+  max-width: 550px;
+
+  margin-bottom: 30px;
+
+  color: #cccccc;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.watch-button,
+.info-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 22px;
+
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================
+   WATCH BUTTON
+========================= */
+
+.watch-button {
+  background: #e50914;
+
+  color: #ffffff;
+}
+
+.watch-button:hover {
+  background: #f40612;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   INFO BUTTON
+========================= */
+
+.info-button {
+  background: rgba(255, 255, 255, 0.15);
+
+  color: #ffffff;
+}
+
+.info-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   CATALOG SECTIONS
+========================= */
+
+.movie-section {
+  padding: 50px 50px 60px;
+}
+
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.section-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #e50914;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-header h2 {
+  margin: 0;
+
+  font-size: 26px;
+}
+
+
+/* =========================
+   SECTION DESCRIPTION
+========================= */
+
+.section-description {
+  color: #777777;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOVIE GRID
+========================= */
+
+.movie-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================
+   MOVIE CARD
+========================= */
+
+.movie-card {
+  background: #151515;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+
+  background: #1b1b1b;
+}
+
+
+/* =========================
+   MOVIE POSTER
+========================= */
+
+.movie-poster {
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+
+  background: #252525;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-poster img {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   MOVIE INFO
+========================= */
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-info h3 {
+  margin-bottom: 8px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+}
+
+.movie-info p {
+  color: #999999;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOVIE CATEGORY
+========================= */
+
+.movie-category {
+  display: inline-block;
+
+  margin-top: 10px;
+  padding: 4px 8px;
+
+  background: #252525;
+
+  border-radius: 4px;
+
+  color: #aaaaaa;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+  padding: 90px 50px;
+
+  background: #101010;
+
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.section-title>span {
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.section-title h2 {
+  margin: 12px 0 15px;
+
+  font-size: 36px;
+}
+
+.section-title p {
+  color: #999999;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   DEVICES
+========================= */
+
+.devices {
+  max-width: 1000px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   DEVICE CARD
+========================= */
+
+.device-card {
+  padding: 35px;
+
+  background: #151515;
+
+  border: 1px solid #242424;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.device-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #e50914;
+}
+
+
+/* =========================
+   DEVICE ICON
+========================= */
+
+.device-icon {
+  margin-bottom: 20px;
+
+  font-size: 50px;
+}
+
+
+/* =========================
+   DEVICE TITLE
+========================= */
+
+.device-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 22px;
+}
+
+
+/* =========================
+   DEVICE DESCRIPTION
+========================= */
+
+.device-card p {
+  color: #999999;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  padding: 100px 50px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(229, 9, 20, 0.15),
+      transparent 45%),
+    #0b0b0b;
+}
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
+
+.contact-content {
+  max-width: 700px;
+
+  margin: 0 auto;
+}
+
+.contact-content>span {
+  color: #e50914;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.contact-content h2 {
+  margin: 15px 0;
+
+  font-size: 40px;
+}
+
+.contact-content p {
+  margin-bottom: 30px;
+
+  color: #aaaaaa;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  background: #e50914;
+
+  border-radius: 6px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-button:hover {
+  background: #f40612;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 30px 50px;
+
+  background: #080808;
+
+  border-top: 1px solid #1d1d1d;
+
+  text-align: center;
+}
+
+.footer p {
+  color: #666666;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .header {
+    padding: 0 25px;
+  }
+
+  .nav {
+    gap: 18px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  /* HEADER */
+
+  .header {
+    height: auto;
+
+    min-height: 70px;
+
+    padding: 15px 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    gap: 20px;
+
+    padding-bottom: 5px;
+  }
+
+  .nav a {
+    white-space: nowrap;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    min-height: 520px;
+
+    padding: 60px 25px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+
+  /* CATALOG */
+
+  .movie-section {
+    padding: 35px 20px 50px;
+  }
+
+  .section-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+  }
+
+  .movie-poster {
+    height: 230px;
+  }
+
+
+  /* HOW IT WORKS */
+
+  .how-it-works {
+    padding: 70px 20px;
+  }
+
+  .devices {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+
+  /* CONTACT */
+
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-content h2 {
+    font-size: 32px;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding: 25px 20px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .login-button {
+    padding: 8px 13px;
+
+    font-size: 13px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  /* CATALOG */
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .movie-poster {
+    height: 200px;
+  }
+
+  .movie-info {
+    padding: 12px;
+  }
+
+  .movie-info h3 {
+    font-size: 15px;
+  }
+
+  .movie-info p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 8px;
+
+  background: transparent;
+  border: none;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.menu-button span {
+  width: 24px;
+  height: 2px;
+
+  display: block;
+
+  background: #ffffff;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .header {
+    position: relative;
+
+    height: 70px;
+
+    padding: 0 20px;
+
+    flex-wrap: nowrap;
+  }
+
+
+  /* Esconde menu desktop */
+
+  .header .nav {
+    display: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+
+  /* Botão */
+
+  .menu-button {
+    display: flex;
+
+    margin-left: auto;
+  }
+
+
+  /* Menu aberto */
+
+  .mobile-menu {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 20px 20px;
+
+    background: #111111;
+
+    border-bottom: 1px solid #292929;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0.2s ease;
+
+    z-index: 20;
+  }
+
+  .mobile-menu.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+
+  /* Links */
+
+  .mobile-menu a {
+    width: 100%;
+
+    padding: 14px 5px;
+
+    color: #dddddd;
+
+    font-size: 16px;
+
+    border-bottom: 1px solid #222222;
+  }
+
+  .mobile-menu a:hover {
+    color: #ffffff;
+  }
+
+
+  /* WhatsApp / contato */
+
+  .mobile-menu .mobile-contact {
+    margin-top: 12px;
+
+    padding: 13px;
+
+    background: #e50914;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-weight: bold;
+  }
+
+  .mobile-menu .mobile-contact:hover {
+    background: #f40612;
+  }
+}
+
+/* =========================
+   HERO MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: 520px;
+
+    padding: 70px 25px;
+
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-category {
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .hero h1 {
+    margin: 12px 0 18px;
+
+    font-size: 40px;
+
+    line-height: 1.08;
+  }
+
+  .hero p {
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .hero-buttons {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+  }
+
+  .watch-button,
+  .info-button {
+    width: 100%;
+
+    min-height: 48px;
+  }
+}
