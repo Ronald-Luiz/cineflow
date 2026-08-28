@@ -1,10 +1,12 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import ChannelSection from "./components/ChannelSection"
 import CategorySection from "./components/CategorySection"
 import HowItWorks from "./components/HowItWorks"
 import Contact from "./components/Contact"
 
 import { filmes } from "./data/movies"
+
 
 const series = [
   {
@@ -44,33 +46,6 @@ const series = [
   },
 ]
 
-const canais = [
-  {
-    id: 1,
-    titulo: "Canal de Notícias",
-    categoria: "Notícias",
-  },
-  {
-    id: 2,
-    titulo: "Canal Esportivo",
-    categoria: "Esportes",
-  },
-  {
-    id: 3,
-    titulo: "Canal de Filmes",
-    categoria: "Filmes",
-  },
-  {
-    id: 4,
-    titulo: "Canal Infantil",
-    categoria: "Infantil",
-  },
-  {
-    id: 5,
-    titulo: "Canal de Entretenimento",
-    categoria: "Entretenimento",
-  },
-]
 
 function App() {
   return (
@@ -78,7 +53,18 @@ function App() {
       <Header />
 
       <main>
+
+        {/* HERO */}
+
         <Hero />
+
+
+        {/* CANAIS */}
+
+        <ChannelSection />
+
+
+        {/* FILMES */}
 
         <CategorySection
           id="filmes"
@@ -88,6 +74,9 @@ function App() {
           tipo="Filme"
         />
 
+
+        {/* SÉRIES */}
+
         <CategorySection
           id="series"
           titulo="Séries em destaque"
@@ -96,17 +85,16 @@ function App() {
           tipo="Série"
         />
 
-        <CategorySection
-          id="canais"
-          titulo="Canais disponíveis"
-          descricao="Entretenimento ao vivo"
-          itens={canais}
-          tipo="Canal"
-        />
+
+        {/* COMO FUNCIONA */}
 
         <HowItWorks />
 
+
+        {/* CONTATO */}
+
         <Contact />
+
       </main>
     </>
   )

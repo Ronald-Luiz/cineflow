@@ -1,25 +1,31 @@
 function Hero() {
     return (
-        <section className="hero" id="inicio">
+        <section className="hero">
+
             <div className="hero-content">
 
                 <span className="hero-category">
-                    30 DIAS GRÁTIS
+                    6 HORAS GRÁTIS
                 </span>
 
                 <h1>
-                    Seu entretenimento em um só lugar
+                    Canais, filmes e séries em um só lugar.
                 </h1>
 
                 <p>
-                    Experimente o CineFlow gratuitamente e tenha acesso
-                    a filmes, séries e canais através do Bob Player.
+                    Tenha acesso a uma grande variedade de entretenimento,
+                    incluindo canais, filmes, séries, esportes e muito mais.
                 </p>
+
+                <div className="hero-price">
+                    <strong>Por menos de R$ 2</strong>
+                    <span>por dia.</span>
+                </div>
 
                 <div className="hero-buttons">
 
                     <a
-                        href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o.%20Gostaria%20de%20saber%20mais%20sobre%20como%20funciona%20e%20como%20posso%20come%C3%A7ar%20meu%20teste%20de%2030%20dias%20gr%C3%A1tis.%20%F0%9F%98%8A"
+                        href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o.%20Gostaria%20de%20saber%20mais%20sobre%20o%20teste%20gr%C3%A1tis%20de%206%20horas.%20%F0%9F%98%8A"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="watch-button"
@@ -28,19 +34,20 @@ function Hero() {
                     </a>
 
                     <a
-                        href="#filmes"
+                        href="#como-funciona"
                         className="info-button"
                     >
-                        Ver catálogo
+                        Como funciona
                     </a>
 
                 </div>
 
-                <small className="hero-note">
-                    Consulte as condições da oferta pelo WhatsApp.
-                </small>
+                <span className="hero-note">
+                    📺 Consulte a compatibilidade da sua TV pelo WhatsApp.
+                </span>
 
             </div>
+
         </section>
     )
 }
