@@ -24,10 +24,10 @@ function ChannelSection() {
       nome: "SporTV",
       logo: "/channels/sportv.png",
     },
-  ];
+  ]
 
   return (
-    <section className="channels-section">
+    <section className="channels-section" id="canais">
 
       <div className="channels-header">
 
@@ -41,7 +41,6 @@ function ChannelSection() {
         </p>
 
       </div>
-
 
       <div className="channels-grid">
 
@@ -60,14 +59,13 @@ function ChannelSection() {
 
       </div>
 
-
       <p className="channels-note">
         * A disponibilidade dos canais pode variar conforme o
         catálogo e o dispositivo utilizado.
       </p>
 
     </section>
-  );
+  )
 }
 
-export default ChannelSection;
+export default ChannelSection

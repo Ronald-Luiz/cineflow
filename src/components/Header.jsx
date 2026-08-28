@@ -21,9 +21,13 @@ function Header() {
 
             <nav className="nav">
                 <a href="#filmes">Filmes</a>
+
                 <a href="#series">Séries</a>
+
                 <a href="#canais">Canais</a>
+
                 <a href="#como-funciona">Como funciona</a>
+
                 <a href="#contato">Entre em contato</a>
             </nav>
 
@@ -31,6 +35,7 @@ function Header() {
             {/* AÇÃO DESKTOP */}
 
             <div className="header-actions">
+
                 <a
                     href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o."
                     target="_blank"
@@ -39,6 +44,7 @@ function Header() {
                 >
                     Quero conhecer
                 </a>
+
             </div>
 
 
