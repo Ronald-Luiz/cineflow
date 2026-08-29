@@ -63,7 +63,7 @@ function Hero() {
                 </div>
 
                 {/* CATEGORIAS */}
-                <div className="hero-info">
+                {/* <div className="hero-info">
 
                     <div className="hero-info-item">
                         <strong>🎬</strong>
@@ -85,13 +85,13 @@ function Hero() {
                         <span>Esportes</span>
                     </div>
 
-                </div>
+                </div> */}
 
                 {/* COMPATIBILIDADE */}
-                <span className="hero-note">
+                {/* <span className="hero-note">
                     📱 Assista onde preferir — compatível com TV, Smart TV,
                     computador, notebook, tablet, Android e iPhone.
-                </span>
+                </span> */}
 
             </div>
 
