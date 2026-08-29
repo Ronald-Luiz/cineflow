@@ -8,9 +8,9 @@ function Hero() {
             <div className="hero-content">
 
                 {/* BADGE */}
-                <span className="hero-badge">
+                {/* <span className="hero-badge">
                     🎁 6 HORAS GRÁTIS
-                </span>
+                </span> */}
 
                 {/* LABEL */}
                 <div className="hero-top">
@@ -32,14 +32,7 @@ function Hero() {
                     que preparamos para você.
                 </p>
 
-                {/* OFERTA */}
-                <div className="hero-offer">
-                    <strong>🎁 Experimente grátis</strong>
-                    <span>
-                        Tenha acesso por 6 horas e conheça o serviço
-                        antes de decidir.
-                    </span>
-                </div>
+
 
                 {/* BOTÕES */}
                 <div className="hero-buttons">
@@ -53,6 +46,7 @@ function Hero() {
                         🎁 Quero testar grátis
                     </a>
 
+
                     <a
                         href="#como-funciona"
                         className="hero-secondary-button"
@@ -60,7 +54,13 @@ function Hero() {
                         Saiba como funciona
                     </a>
 
+
                 </div>
+
+                <span>
+                    Tenha acesso por 6 horas e conheça o serviço
+                    antes de decidir.
+                </span>
 
                 {/* CATEGORIAS */}
                 {/* <div className="hero-info">

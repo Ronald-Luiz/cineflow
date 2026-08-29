@@ -5,10 +5,6 @@ function ChannelSection() {
       logo: "/channels/globo.png",
     },
     {
-      nome: "Record",
-      logo: "/channels/record.png",
-    },
-    {
       nome: "Band",
       logo: "/channels/band.png",
     },
@@ -17,47 +13,133 @@ function ChannelSection() {
       logo: "/channels/sbt.png",
     },
     {
-      nome: "TNT",
-      logo: "/channels/tnt.png",
-    },
-    {
       nome: "SporTV",
       logo: "/channels/sportv.png",
     },
-  ]
+    {
+      nome: "ESPN",
+      logo: "/channels/espn.png",
+    },
+    {
+      nome: "ESPN",
+      logo: "/channels/espn.png",
+    }
+  ];
+
+  const filmesPlataformas = [
+    {
+      nome: "Netflix",
+      logo: "/channels/netflix.png",
+    },
+    {
+      nome: "Prime Video",
+      logo: "/channels/primevideo.png",
+    },
+    {
+      nome: "Disney+",
+      logo: "/channels/dinseyplus.png",
+    },
+    {
+      nome: "Paramount+",
+      logo: "/channels/paramount.png",
+    },
+    {
+      nome: "Roku",
+      logo: "/channels/roku.png",
+    },
+    {
+      nome: "Roku",
+      logo: "/channels/roku.png",
+    }
+  ];
 
   return (
     <section className="channels-section" id="canais">
 
-      <div className="channels-header">
+      {/* =========================
+          CANAIS DISPONÍVEIS
+      ========================= */}
 
-        <span>PROGRAMAÇÃO</span>
+      <div className="channels-block">
 
-        <h2>Alguns dos canais disponíveis</h2>
+        <div className="channels-header">
+          <span>PROGRAMAÇÃO</span>
 
-        <p>
-          Uma grande variedade de canais para você aproveitar
-          notícias, entretenimento, filmes, esportes e muito mais.
-        </p>
+          <h2>Canais disponíveis</h2>
+
+          <p>
+            Uma grande variedade de canais para você aproveitar
+            notícias, entretenimento, filmes, esportes e muito mais.
+          </p>
+        </div>
+
+        <div className="channels-grid">
+
+          {canais.map((canal) => (
+            <div className="channel-card" key={canal.nome}>
+
+              <div className="channel-logo">
+                <img
+                  src={canal.logo}
+                  alt={`Logo ${canal.nome}`}
+                />
+              </div>
+
+              <span>{canal.nome}</span>
+
+            </div>
+          ))}
+
+        </div>
 
       </div>
 
-      <div className="channels-grid">
 
-        {canais.map((canal) => (
-          <div className="channel-card" key={canal.nome}>
+      {/* =========================
+          FILMES E PLATAFORMAS
+      ========================= */}
 
-            <img
-              src={canal.logo}
-              alt={`Logo ${canal.nome}`}
-            />
+      <div className="platforms-block">
 
-            <span>{canal.nome}</span>
+        <div className="channels-header">
+          <span>FILMES & ENTRETENIMENTO</span>
 
-          </div>
-        ))}
+          <h2>Filmes e plataformas</h2>
+
+          <p>
+            Aproveite também conteúdos de filmes, séries e
+            entretenimento nas principais plataformas.
+          </p>
+        </div>
+
+        <div className="channels-grid platforms-grid">
+
+          {filmesPlataformas.map((filme) => (
+            <div
+              className="channel-card platform-card"
+              key={filme.nome}
+            >
+
+              <div className="channel-logo">
+                <img
+                  src={filme.logo}
+                  alt={`Logo ${filme.nome}`}
+                />
+              </div>
+
+              <span>{filme.nome}</span>
+
+            </div>
+          ))}
+
+        </div>
 
       </div>
+
+
+      {/* =========================
+          OBSERVAÇÃO
+      ========================= */}
 
       <p className="channels-note">
         * A disponibilidade dos canais pode variar conforme o
@@ -65,7 +147,7 @@ function ChannelSection() {
       </p>
 
     </section>
-  )
+  );
 }
 
-export default ChannelSection
+export default ChannelSection;

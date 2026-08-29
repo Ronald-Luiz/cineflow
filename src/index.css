@@ -63,6 +63,18 @@ a {
 }
 
 
+.platforms-block {
+  align-items: center;
+
+  margin: 10px auto 0;
+
+  padding-top: 50px;
+
+  border-top: 1px solid #1d2027;
+}
+
+
+
 /* =========================
    LOGO
 ========================= */
@@ -1318,7 +1330,10 @@ a {
 
   display: grid;
 
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 140px);
+
+  justify-content: center;
+
 
   gap: 15px;
 
@@ -1331,6 +1346,7 @@ a {
 ========================= */
 
 .channel-card {
+
   height: 125px;
 
   display: flex;
@@ -1444,7 +1460,10 @@ a {
   }
 
   .channels-grid {
+
     grid-template-columns: repeat(3, 1fr);
+
+
   }
 
   .hero-info {
@@ -1914,6 +1933,7 @@ a {
   ========================= */
 
   .channels-section {
+
     padding: 60px 20px;
   }
 
