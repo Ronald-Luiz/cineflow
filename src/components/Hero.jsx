@@ -2,50 +2,106 @@ function Hero() {
     return (
         <section className="hero">
 
+            <div className="hero-background"></div>
+            <div className="hero-overlay"></div>
+
             <div className="hero-content">
 
-                <span className="hero-category">
-                    6 HORAS GRÁTIS
-                </span>
+                <div className="hero-top">
+
+                    <span className="hero-badge">
+                        🎁 6 HORAS GRÁTIS
+                    </span>
+
+                    <span className="hero-label">
+                        CINEFLOW
+                    </span>
+
+                </div>
 
                 <h1>
-                    Canais, filmes e séries em um só lugar.
+                    Entretenimento
+                    <span> sem limites.</span>
                 </h1>
 
-                <p>
-                    Tenha acesso a uma grande variedade de entretenimento,
-                    incluindo canais, filmes, séries, esportes e muito mais.
+                <p className="hero-description">
+                    Filmes, séries, canais ao vivo, esportes e muito mais
+                    em um só lugar. Conheça o CineFlow e descubra tudo o
+                    que preparamos para você.
                 </p>
 
-                <div className="hero-price">
-                    <strong>Por menos de R$ 2</strong>
-                    <span>por dia.</span>
+                <div className="hero-offer">
+
+                    <div className="offer-icon">
+                        🎁
+                    </div>
+
+                    <div className="offer-content">
+                        <strong>
+                            Experimente grátis
+                        </strong>
+
+                        <span>
+                            Tenha acesso por 6 horas e conheça o serviço
+                            antes de decidir.
+                        </span>
+                    </div>
+
                 </div>
 
                 <div className="hero-buttons">
 
                     <a
-                        href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o.%20Gostaria%20de%20saber%20mais%20sobre%20o%20teste%20gr%C3%A1tis%20de%206%20horas.%20%F0%9F%98%8A"
+                        href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20quero%20experimentar%20as%206%20horas%20gr%C3%A1tis."
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="watch-button"
+                        className="hero-primary-button"
                     >
-                        Quero experimentar
+                        🎁 Quero testar grátis
                     </a>
 
                     <a
                         href="#como-funciona"
-                        className="info-button"
+                        className="hero-secondary-button"
                     >
-                        Como funciona
+                        Saiba como funciona
                     </a>
 
                 </div>
 
+                <div className="hero-info">
+
+                    <div className="hero-info-item">
+                        <strong>🎬</strong>
+                        <span>Filmes</span>
+                    </div>
+
+                    <div className="hero-info-item">
+                        <strong>📺</strong>
+                        <span>Canais ao vivo</span>
+                    </div>
+
+                    <div className="hero-info-item">
+                        <strong>🍿</strong>
+                        <span>Séries</span>
+                    </div>
+
+                    <div className="hero-info-item">
+                        <strong>⚽</strong>
+                        <span>Esportes</span>
+                    </div>
+
+                </div>
+
                 <span className="hero-note">
-                    📺 Consulte a compatibilidade da sua TV pelo WhatsApp.
+                    Compatível com diversos dispositivos e aplicativos.
                 </span>
 
+            </div>
+
+            <div className="hero-scroll">
+                <span>Explore o CineFlow</span>
+                <span className="scroll-arrow">↓</span>
             </div>
 
         </section>
