@@ -7,13 +7,23 @@ function Header() {
         setMenuAberto(false)
     }
 
+    const whatsappLink =
+        "https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20Amigo%20Flix%20e%20fiquei%20interessado%20no%20servi%C3%A7o."
+
     return (
         <header className="header">
 
             {/* LOGO */}
 
-            <a href="#" className="logo">
-                Cine<span>Flow</span>
+            <a
+                href="#"
+                className="logo"
+                onClick={fecharMenu}
+            >
+                <img
+                    src="/logo.png"
+                    alt="Amigo Flix"
+                />
             </a>
 
 
@@ -21,39 +31,36 @@ function Header() {
 
             <nav className="nav">
                 <a href="#filmes">Filmes</a>
-
                 <a href="#series">Séries</a>
-
                 <a href="#canais">Canais</a>
-
                 <a href="#como-funciona">Como funciona</a>
-
-                <a href="#contato">Entre em contato</a>
             </nav>
 
 
-            {/* AÇÃO DESKTOP */}
+            {/* CTA */}
 
             <div className="header-actions">
-
                 <a
-                    href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o."
+                    href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="login-button"
                 >
                     Quero conhecer
                 </a>
-
             </div>
 
 
-            {/* BOTÃO HAMBÚRGUER */}
+            {/* HAMBÚRGUER */}
 
             <button
-                className="menu-button"
+                className={`menu-button ${menuAberto ? "active" : ""}`}
                 onClick={() => setMenuAberto(!menuAberto)}
-                aria-label="Abrir menu"
+                aria-label={
+                    menuAberto
+                        ? "Fechar menu"
+                        : "Abrir menu"
+                }
                 aria-expanded={menuAberto}
             >
                 <span></span>
@@ -67,28 +74,36 @@ function Header() {
             {menuAberto && (
                 <nav className="mobile-menu">
 
-                    <a href="#filmes" onClick={fecharMenu}>
+                    <a
+                        href="#filmes"
+                        onClick={fecharMenu}
+                    >
                         Filmes
                     </a>
 
-                    <a href="#series" onClick={fecharMenu}>
+                    <a
+                        href="#series"
+                        onClick={fecharMenu}
+                    >
                         Séries
                     </a>
 
-                    <a href="#canais" onClick={fecharMenu}>
+                    <a
+                        href="#canais"
+                        onClick={fecharMenu}
+                    >
                         Canais
                     </a>
 
-                    <a href="#como-funciona" onClick={fecharMenu}>
+                    <a
+                        href="#como-funciona"
+                        onClick={fecharMenu}
+                    >
                         Como funciona
                     </a>
 
-                    <a href="#contato" onClick={fecharMenu}>
-                        Entre em contato
-                    </a>
-
                     <a
-                        href="https://wa.me/553588171523?text=Ol%C3%A1!%20Vim%20conhecer%20o%20CineFlow%20e%20fiquei%20interessado%20no%20servi%C3%A7o."
+                        href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mobile-contact"

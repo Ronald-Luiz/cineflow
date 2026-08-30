@@ -19,10 +19,6 @@ function ChannelSection() {
     {
       nome: "ESPN",
       logo: "/channels/espn.png",
-    },
-    {
-      nome: "ESPN",
-      logo: "/channels/espn.png",
     }
   ];
 
@@ -42,10 +38,6 @@ function ChannelSection() {
     {
       nome: "Paramount+",
       logo: "/channels/paramount.png",
-    },
-    {
-      nome: "Roku",
-      logo: "/channels/roku.png",
     },
     {
       nome: "Roku",
